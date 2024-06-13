@@ -3,77 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suscripción</title>
+    <title>Diario Ejemplo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Diario Online</h1>
+        <div class="container">
+            <h1>Noticias 2024</h1>
+            <p class="date">13 de junio, 2024</p>
+        </div>
     </header>
     
-    <main>
-        <h2 id="form-title">HOLA</h2>
-        <form id="subscription-form">
-            <div class="form-group">
-                <label for="fullName">Nombre Completo:</label>
-                <input type="text" id="fullName" name="fullName">
-                <span class="error" id="error-fullName"></span>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <span class="error" id="error-email"></span>
-            </div>
-            <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password">
-                <span class="error" id="error-password"></span>
-            </div>
-            <div class="form-group">
-                <label for="confirmPassword">Repetir Contraseña:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword">
-                <span class="error" id="error-confirmPassword"></span>
-            </div>
-            <div class="form-group">
-                <label for="age">Edad:</label>
-                <input type="number" id="age" name="age">
-                <span class="error" id="error-age"></span>
-            </div>
-            <div class="form-group">
-                <label for="phone">Teléfono:</label>
-                <input type="tel" id="phone" name="phone">
-                <span class="error" id="error-phone"></span>
-            </div>
-            <div class="form-group">
-                <label for="address">Dirección:</label>
-                <input type="text" id="address" name="address">
-                <span class="error" id="error-address"></span>
-            </div>
-            <div class="form-group">
-                <label for="city">Ciudad:</label>
-                <input type="text" id="city" name="city">
-                <span class="error" id="error-city"></span>
-            </div>
-            <div class="form-group">
-                <label for="postalCode">Código Postal:</label>
-                <input type="text" id="postalCode" name="postalCode">
-                <span class="error" id="error-postalCode"></span>
-            </div>
-            <div class="form-group">
-                <label for="dni">DNI:</label>
-                <input type="text" id="dni" name="dni">
-                <span class="error" id="error-dni"></span>
-            </div>
-            <div class="form-group">
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </main>
-    
-    <footer>
-        <p>© 2024 Diario Online. Todos los derechos reservados.</p>
-    </footer>
+    <nav class="navbar">
+        <div class="menu-icon">☰</div>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Política</a></li>
+            <li><a href="#">Economía</a></li>
+            <li><a href="#">Deportes</a></li>
+            <li><a href="susc.html">Suscribirse</a></li>
+        </ul>
+    </nav>
 
-    <script src="scripts.js"></script>
+    <main>
+        <section class="main-news">
+            <article class="news-item">
+                <img src="https://www.lavanguardia.com/andro4all/hero/2024/05/descubren-un-exoplaneta-potencialmente-habitable-a-poca-distancia-de-la-tierra.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="Imagen noticia principal">
+                <h2>Científicos descubren nuevo exoplaneta potencialmente habitable</h2>
+                <p>Un equipo de astrónomos ha encontrado un exoplaneta en la zona habitable de su estrella, lo que podría significar condiciones propicias para la vida. El planeta, llamado Kepler-1649c, tiene un tamaño similar al de la Tierra y podría tener agua líquida en su superficie. <br>
+                En la investigación se han combinado datos obtenidos desde telescopios espaciales y terrestres, hallándose el exoplaneta templado de tamaño similar a la Tierra más cercano hasta la fecha detectado a través del método de tránsito, es decir, observando los oscurecimientos periódicos de su estrella causados por el paso del planeta. 
+
+                El nuevo mundo tiene un diámetro ligeramente inferior a nuestro planeta, y la temperatura de su superficie se estima en unos 42 °C. La temperatura final, sin embargo, dependerá de si este planeta ha sido capaz de retener una atmósfera y de su composición desde su formación hasta el presente.<a href="#">Leer más...</a></p>
+            </article>
+        </section>
+
+        <section class="secondary-news">
+            <article class="news-item">
+                <img src="https://www.rocheplus.es/content/dam/hcp-portals/spain/images/innovacion/articulos/interior/22.%20IA%20diagnostico%20medico.png" alt="Imagen noticia secundaria">
+                <h3>Nueva tecnología de IA revoluciona la medicina</h3>
+                <a href="#">Leer más...</a>
+            </article>
+            <article class="news-item">
+                <img src="https://www.finect.com/v4/resources/media/images/ebaa225a7b37468bba03c5b95674ffe7-w1332" alt="Imagen noticia secundaria">
+                <h3>La economía mundial muestra señales de recuperación</h3>
+                <a href="#">Leer más...</a>
+            </article>
+            <article class="news-item">
+                <h3>El cambio climático y su impacto en las ciudades costeras</h3>
+                <a href="#">Leer más...</a>
+            </article>
+        </section>
+        
+        <aside class="advertisements">
+            <div class="ad"> <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2778580/capsule_616x353.jpg?t=1717530563" alt="ad1">
+                La Tierra de las Sombras. Un lugar oscurecido por el Terrárbol. 
+                Donde la diosa Marika pisó por primera vez. <br>
+                
+                Una tierra purgada en una batalla olvidada. 
+                Incendiada por la llama de Messmer. <br>
+                
+                Fue a esta tierra a la que Miquella partió. 
+                Se despojó de su carne, de su fuerza, de su linaje. 
+                De todo lo dorado. <br>
+                
+                Y ahora, Miquella espera el regreso de su Señor prometido. <br>
+                
+                <b class="ad1">Se requiere el juego base de Elden Ring para jugar Shadow of the Erdtree.</b></div>
+            <div class="ad">
+                <img src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/07/hipertextual-coinbase-se-convertiria-primera-plataforma-criptomonedas-salir-bolsa-2020303225.jpg?fit=2500%2C1500&quality=50&strip=all&ssl=1" alt="ad2">
+                <a href="https://www.coinbase.com" target="_blank">coinbase.com</a></div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diario Ejemplo. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
